@@ -1,0 +1,27 @@
+# Autor: Gabriel R Maciel
+# Data: 10/10/2024
+# Descrição: Programa para verificar se número pertence à sequência Fibonacci.
+
+def fibonacci(n):  # Função sequência Fibonacci
+    """
+    — > Função que verifica se número digitado pertence à sequência Fibonacci.
+    :param n: Número digitado.
+    :return: Se pertence ou não pertence.
+    """
+    if n < 0:
+        return "não pertence"
+    a, b = 0, 1
+    while a < n:
+        a, b = b, a + b
+    return "pertence" if a == n else "não pertence"
+
+
+# Programa Principal
+while True:
+    print('Sistema Target - Fibonacci')
+    num = int(input("Digite um número [-1 Sair]: "))
+    if num == -1:
+        break
+    else:
+        print(f'O número {num} {fibonacci(num)} a sequência Fibonacci.')
+        print(' ')
