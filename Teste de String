@@ -1,0 +1,15 @@
+# Autor: Gabriel R Maciel
+# Data: 10/10/2024
+# Descrição: Programa para verificar quantas vezes letra apareceu em texto.
+
+texto = str(input("Digite um texto/palavra: "))
+count_a = texto.lower().count('a')
+
+# Verifica se a letra 'a' existe na string
+if count_a > 0:
+    print(f"A letra 'a' aparece {count_a} vezes no texto.")
+
+else:
+    print("A letra 'a' não está presente na texto.")
+
+print('Obrigado pelo uso, Volte sempre :)')
